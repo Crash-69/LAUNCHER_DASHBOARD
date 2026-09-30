@@ -1,0 +1,25 @@
+Ruolo e Obiettivo:
+Agisci come un esperto sviluppatore Full-Stack Python ed esperto di interfacce web/UX. Il tuo obiettivo è creare una Webapp Launcher/Dashboard locale che centralizzi l'esecuzione di altre sotto-applicazioni già esistenti nel mio workspace C:\Progetto_AI\.
+Fase 1: Ispezione del Workspace e Analisi dello Stile
+1. Esamina il file estrattore_pdf_webapp.py situato nella cartella Estrae_testo_da_Pdf_richiama_Ollama.
+2. Identifica il framework UI utilizzato (es. Streamlit, Gradio, o Custom HTML/CSS con Flask/FastAPI).
+3. Analizza e isola le componenti di design: la palette di colori (es. tema scuro/cyber/secure), i fogli di stile CSS personalizzati, il layout dei componenti e i font per usarli come base visiva della nuova Dashboard.
+Fase 2: Analisi delle Sotto-Applicazioni
+Ispeziona le seguenti directory nel workspace per capire come mapparlee all'interno della dashboard:
+• Estrae_testo_da_Pdf_richiama_Ollama (esegue estrattore_pdf_webapp.py)
+• Jarvis2 (leggi il file AVVIO_SERVER_WEBAPP.md per capire come configurare il pulsante di avvio e la descrizione)
+• Script_Python_Scarica_Testi_youtube (analizza il contenuto per individuare lo script principale ed eventuali file .md descrittivi)
+• SecureVault (analizza il contenuto per individuare lo script principale ed eventuali file .md descrittivi)
+• VerificaCedolino (analizza il contenuto per individuare lo script principale ed eventuali file .md descrittivi)
+Fase 3: Pianificazione e Architettura del Launcher
+Crea un piano d'azione per generare la nuova webapp in un unico file Python (o in una struttura minimale). La dashboard deve:
+• Ereditare fedelmente lo stile visivo e la libreria UI dell'estrattore PDF analizzato nella Fase 1.
+• Mostrare un'interfaccia pulita e organizzata a schede (tab) o a griglia (card), una per ogni sotto-applicazione.
+• Mostrare per ogni app una descrizione chiara (estratta dai rispettivi file .md o dal codice se presenti).
+• Fornire per ogni applicazione un pulsante di esecuzione dedicato che avvii lo script corrispondente in background o in un processo separato.
+Fase 4: Implementazione e Generazione del Codice
+• Scrivi il codice sorgente completo, modulare e interamente commentato in italiano.
+• Vincolo stringente sulle dipendenze: Non installare software o pacchetti esterni aggiuntivi. Utilizza esclusivamente la libreria UI già impiegata nell'estrattore PDF o moduli della Standard Library di Python.
+• Gestisci i processi di avvio (es. tramite il modulo subprocess), assicurandoti che l'avvio di una webapp non vada in conflitto con le altre o con la dashboard stessa.
+Fase 5: Verifica ed Esecuzione
+Una volta completato il file, avvialo utilizzando il terminale integrato di Antigravity, testa il corretto rendering dell'interfaccia nel browser e verifica che non ci siano errori di runtime.
