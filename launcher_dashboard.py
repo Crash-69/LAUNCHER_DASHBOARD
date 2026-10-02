@@ -70,6 +70,21 @@ APPS = (
         opens_browser=True,
     ),
     AppConfig(
+        app_id="docx-markdown",
+        title="Word in Markdown",
+        category="Documenti e AI",
+        icon="MD",
+        description=(
+            "Converte documenti Word DOCX in Markdown, con validazione Magika, "
+            "anteprima e download locale."
+        ),
+        folder=WORKSPACE_DIR / "APP_MarkDown",
+        script=WORKSPACE_DIR / "APP_MarkDown" / "docx_to_markdown_webapp.py",
+        port=8026,
+        url="http://127.0.0.1:8026/",
+        opens_browser=True,
+    ),
+    AppConfig(
         app_id="jarvis",
         title="Jarvis2",
         category="Assistente locale",
@@ -97,6 +112,21 @@ APPS = (
         script=WORKSPACE_DIR / "Script_Python_Scarica_Testi_youtube" / "app.py",
         port=8501,
         url="http://127.0.0.1:8501/",
+        runner="streamlit",
+    ),
+    AppConfig(
+        app_id="word-mermaid",
+        title="Word in Mermaid",
+        category="Documenti e AI",
+        icon="MM",
+        description=(
+            "Converte documenti Word o Markdown in diagrammi Mermaid, con supporto "
+            "AI locale tramite Ollama."
+        ),
+        folder=WORKSPACE_DIR / "APP_Meremaid_Diagram",
+        script=WORKSPACE_DIR / "APP_Meremaid_Diagram" / "word_to_mermaid_llm_ultimate.py",
+        port=8502,
+        url="http://127.0.0.1:8502/",
         runner="streamlit",
     ),
     AppConfig(

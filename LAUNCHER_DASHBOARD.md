@@ -49,8 +49,10 @@ Le configurazioni sono raccolte nella tupla `APPS` del file Python.
 | ID | Entry point | Tipo | Porta |
 | --- | --- | --- | ---: |
 | `pdf` | `Estrae_testo_da_Pdf_richiama_Ollama/estrattore_pdf_webapp.py` | Webapp Python | 8020 |
+| `docx-markdown` | `APP_MarkDown/docx_to_markdown_webapp.py` | Webapp Python | 8026 |
 | `jarvis` | `Jarvis2/run_webapp.py` | Webapp Python, usa `.venv` se presente | 8008 |
 | `youtube` | `Script_Python_Scarica_Testi_youtube/app.py` | Streamlit | 8501 |
+| `word-mermaid` | `APP_Meremaid_Diagram/word_to_mermaid_llm_ultimate.py` | Streamlit | 8502 |
 | `securevault` | `SecureVault/securevault_app.py` | Webapp Python | 8010 |
 | `cedolino` | `VerificaCedolino/validate_ced_mapping_gui.py` | GUI desktop | Nessuna |
 | `uniemens` | `APP Uniemens/stitch_flussi_uniemens/test_prototipo_dashboard/code_V12_P3_OK_Color_7.htm` | HTML statico | 8021 |
